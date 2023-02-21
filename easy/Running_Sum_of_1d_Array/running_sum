@@ -1,0 +1,14 @@
+class Solution:
+    def runningSum(nums):
+        add_num = 0
+        output_list = []
+        for i in nums:
+            add_num += i
+            output_list.append(add_num)
+
+        return output_list
+
+nums = [1,2,3,4]
+nums_2 = [3,5,7,10]
+print(Solution.runningSum(nums))
+print(Solution.runningSum(nums_2))
